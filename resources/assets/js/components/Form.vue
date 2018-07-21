@@ -70,7 +70,7 @@
 
 <template lang="html">
     <form @submit.prevent="sendForm">
-    
+    <div class="row">
     <div class="form-group col-sm-3">
     <label for="customer">Customer</label>
     <select name="customername" v-model="customername" id="customer" class="form-control">
@@ -86,7 +86,7 @@
         <option v-for="vendor in vendors" :value="vendor.id">{{ vendor.name }}</option>
     </select>
     </div>
-    
+    </div>
     <div class="form-group col-sm-3">    
         <button type="submit" class="btn btn-default">Submit</button>
     </div>
